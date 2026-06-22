@@ -1,3 +1,14 @@
+We’ve looked at many different hyperparameters and heuristic evaluation func
+tions. Our most significant result was the impact of the desireToHome function
+in the offensive agent and the distanceToFood for the defending agent. Where
+we first determined all values by ablation study using heuristic agents, we saw
+that these values were not exactly transferable to using with our MCTS agents
+and required some manual adaptation by observation. The planning nature of
+MCTSmaybe influential to the performance compared to the reflexive heuristic
+agents.
+
+
+
 Our heuristics were actually designed for short-term goals: gain food, stay
 away from ghosts, bring home food if needed. However, MCTS typically works
 well if it could find its own path to long-term objectives (win a game). This was
